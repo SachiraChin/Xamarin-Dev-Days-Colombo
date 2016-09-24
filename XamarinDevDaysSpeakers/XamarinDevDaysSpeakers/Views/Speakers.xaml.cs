@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
-namespace XamarinDevDaysSpeakers
+namespace XamarinDevDaysSpeakers.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class Speakers : ContentPage
     {
-        public MainPage()
+        public Speakers()
         {
             InitializeComponent();
+
+            this.BindingContext = App.ViewModel;
         }
     }
 }
